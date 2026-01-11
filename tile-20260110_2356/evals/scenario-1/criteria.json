@@ -1,0 +1,31 @@
+{
+  "context": "This criteria evaluates how well an engineer uses the SuperAgent package to implement a resilient HTTP client with retry logic, progress monitoring, and custom validation. The evaluation focuses specifically on proper usage of SuperAgent's advanced API features.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Retry implementation",
+      "description": "Uses SuperAgent's .retry() method to configure automatic retry behavior with a count of 2 retries",
+      "max_score": 25
+    },
+    {
+      "name": "Custom retry logic",
+      "description": "Uses .retry() with a callback function to implement custom retry logic that distinguishes between retryable errors (timeouts, 5xx) and non-retryable errors (4xx)",
+      "max_score": 25
+    },
+    {
+      "name": "Progress event handler",
+      "description": "Uses .on('progress', callback) to attach progress event listeners that receive progress data including percent, loaded, and direction properties",
+      "max_score": 20
+    },
+    {
+      "name": "Custom validation",
+      "description": "Uses .ok() method with a callback function to implement custom response validation logic that determines success based on custom criteria",
+      "max_score": 20
+    },
+    {
+      "name": "Request execution",
+      "description": "Properly executes SuperAgent requests using .end(), .then(), or async/await patterns to handle responses and errors",
+      "max_score": 10
+    }
+  ]
+}
