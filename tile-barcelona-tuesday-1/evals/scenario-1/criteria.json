@@ -1,0 +1,36 @@
+{
+  "context": "This criteria evaluates how effectively an engineer uses SuperAgent's advanced features to implement an authenticated API client with session management, retry logic, and timeout configuration. The focus is entirely on proper SuperAgent API usage, not general coding practices.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Agent Initialization",
+      "description": "Uses request.agent() to create an agent instance that manages session state and cookies across multiple requests",
+      "max_score": "20"
+    },
+    {
+      "name": "Session Management",
+      "description": "Leverages the agent's automatic cookie jar to persist authentication state after login, eliminating the need to manually handle session tokens or re-authenticate on subsequent requests",
+      "max_score": "20"
+    },
+    {
+      "name": "Retry Configuration",
+      "description": "Implements retry logic using the .retry() method with appropriate retry count (e.g., 3 retries) that automatically handles transient failures and server errors",
+      "max_score": "20"
+    },
+    {
+      "name": "Timeout Configuration",
+      "description": "Configures different timeout strategies using .timeout() method: simple deadline timeout (e.g., 5000ms) for quick operations and response timeout ({response: ms}) for operations that may have large responses",
+      "max_score": "20"
+    },
+    {
+      "name": "HTTP Methods",
+      "description": "Correctly uses agent's HTTP method helpers (agent.post(), agent.get(), agent.put()) to make requests to the specified endpoints with appropriate request bodies via .send()",
+      "max_score": "15"
+    },
+    {
+      "name": "Promise Handling",
+      "description": "Returns promises from methods using .then() or properly structured promise chains, ensuring methods resolve with response data (res.body) rather than raw response objects",
+      "max_score": "5"
+    }
+  ]
+}
