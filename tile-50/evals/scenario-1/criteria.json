@@ -1,0 +1,36 @@
+{
+  "context": "This evaluation assesses how effectively the engineer uses SuperAgent's advanced features to implement a resilient API client. The focus is on proper usage of multipart form uploads, progress event handling, custom parser registration, intelligent retry mechanisms, and agent-based session management.",
+  "type": "weighted_checklist",
+  "checklist": [
+    {
+      "name": "Agent Creation",
+      "description": "Uses request.agent() to create an agent instance for session management with persistent cookie storage across multiple requests",
+      "max_score": 15
+    },
+    {
+      "name": "Multipart Upload",
+      "description": "Uses .field() to add metadata fields and .attach() to add file attachments in the uploadWithProgress function",
+      "max_score": 20
+    },
+    {
+      "name": "Progress Events",
+      "description": "Registers a 'progress' event listener using .on('progress', callback) and extracts the correct properties (percent, loaded, total, direction) from the progress event object",
+      "max_score": 15
+    },
+    {
+      "name": "Custom Parser Registration",
+      "description": "Registers a custom parser by assigning a function to request.parse['application/xml'] (or the specified content type) in the global parser map",
+      "max_score": 15
+    },
+    {
+      "name": "Retry Configuration",
+      "description": "Uses .retry(count, callback) with a custom callback function that receives (err, res) parameters and returns true/false to determine whether to retry based on specific conditions",
+      "max_score": 20
+    },
+    {
+      "name": "Session Persistence",
+      "description": "Reuses the same agent instance across multiple requests to automatically maintain session cookies, allowing authenticated requests after initial login",
+      "max_score": 15
+    }
+  ]
+}
