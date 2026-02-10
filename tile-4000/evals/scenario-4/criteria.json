@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the ability to configure request timeouts including deadline timeout (total time) and response timeout (time to first byte), and handle timeout errors.",
+  "type": "weighted_checklist",
+  "capability_tested": "Timeout Configuration",
+  "checklist": [
+    {
+      "name": "Timeout configuration",
+      "description": "Correctly configures request timeout using the timeout method with either simple milliseconds or an object with response and deadline properties",
+      "max_score": 50
+    },
+    {
+      "name": "Timeout error handling",
+      "description": "Properly catches and handles timeout errors, distinguishing them from other types of errors",
+      "max_score": 30
+    },
+    {
+      "name": "Granular control",
+      "description": "Demonstrates understanding of both response and deadline timeout configurations",
+      "max_score": 20
+    }
+  ]
+}

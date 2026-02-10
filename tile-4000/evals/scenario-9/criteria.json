@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the configuration of HTTPS requests with custom certificates for mutual TLS authentication, including CA, client certificates, keys, and PFX bundles.",
+  "type": "weighted_checklist",
+  "capability_tested": "HTTPS with Client Certificates",
+  "checklist": [
+    {
+      "name": "Certificate Authority",
+      "description": "Correctly configures custom CA certificate using the ca method for server certificate verification",
+      "max_score": 25
+    },
+    {
+      "name": "Client certificate and key",
+      "description": "Properly sets client certificate and private key using the cert and key methods for mutual TLS",
+      "max_score": 40
+    },
+    {
+      "name": "PFX/PKCS12 support",
+      "description": "Demonstrates ability to use PFX format certificates with the pfx method, including passphrase support",
+      "max_score": 35
+    }
+  ]
+}

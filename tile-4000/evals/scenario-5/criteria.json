@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the ability to configure and track HTTP redirect behavior, including setting maximum redirect limits and accessing redirect history.",
+  "type": "weighted_checklist",
+  "capability_tested": "Redirect Handling",
+  "checklist": [
+    {
+      "name": "Redirect configuration",
+      "description": "Correctly configures the maximum number of redirects to follow using the redirects method",
+      "max_score": 40
+    },
+    {
+      "name": "Redirect tracking",
+      "description": "Accesses and returns the list of redirect URLs from the response object",
+      "max_score": 35
+    },
+    {
+      "name": "Disable redirects",
+      "description": "Demonstrates ability to disable automatic redirect following by setting redirects to 0",
+      "max_score": 25
+    }
+  ]
+}

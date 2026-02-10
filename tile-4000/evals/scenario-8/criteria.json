@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the ability to extend HTTP client functionality using the plugin system, applying middleware functions to modify requests before sending.",
+  "type": "weighted_checklist",
+  "capability_tested": "Plugin System",
+  "checklist": [
+    {
+      "name": "Plugin application",
+      "description": "Correctly applies plugins using the use method to extend request functionality",
+      "max_score": 35
+    },
+    {
+      "name": "Plugin implementation",
+      "description": "Creates properly structured plugin functions that accept a request object and modify it",
+      "max_score": 35
+    },
+    {
+      "name": "Plugin chaining",
+      "description": "Demonstrates ability to chain multiple plugins together and apply them in sequence",
+      "max_score": 30
+    }
+  ]
+}
