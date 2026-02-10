@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's retry() method to automatically retry failed requests on transient errors.",
+  "type": "weighted_checklist",
+  "capability_tested": "Automatic Retry on Failure",
+  "checklist": [
+    {
+      "name": "Use retry() method",
+      "description": "Uses superagent's retry() method to configure automatic retry behavior",
+      "max_score": 50
+    },
+    {
+      "name": "Retry count",
+      "description": "Passes 3 as the retry count argument to retry()",
+      "max_score": 30
+    },
+    {
+      "name": "Method chaining",
+      "description": "Correctly chains retry() with get() and promise handling",
+      "max_score": 10
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the response body on eventual success",
+      "max_score": 10
+    }
+  ]
+}

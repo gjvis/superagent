@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's post() method with automatic JSON serialization for request bodies.",
+  "type": "weighted_checklist",
+  "capability_tested": "POST with JSON Body",
+  "checklist": [
+    {
+      "name": "Use post() method",
+      "description": "Uses superagent's post() method to make the HTTP POST request",
+      "max_score": 30
+    },
+    {
+      "name": "Send JSON data",
+      "description": "Uses the send() method to attach the postData object to the request body",
+      "max_score": 35
+    },
+    {
+      "name": "Automatic serialization",
+      "description": "Relies on superagent's automatic JSON serialization without manually stringifying or setting Content-Type",
+      "max_score": 20
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the response body with the created post data",
+      "max_score": 15
+    }
+  ]
+}

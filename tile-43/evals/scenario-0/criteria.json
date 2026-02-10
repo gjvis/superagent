@@ -1,0 +1,32 @@
+{
+  "context": "This evaluates the ability to use superagent's get() method to perform basic HTTP GET requests and handle the response data.",
+  "type": "weighted_checklist",
+  "capability_tested": "Basic GET Request",
+  "checklist": [
+    {
+      "name": "Import superagent",
+      "description": "Correctly imports or requires the superagent library",
+      "max_score": 10
+    },
+    {
+      "name": "Use get() method",
+      "description": "Uses superagent's get() method or request.get() to make the HTTP request",
+      "max_score": 30
+    },
+    {
+      "name": "URL construction",
+      "description": "Properly constructs the URL with the user ID parameter",
+      "max_score": 15
+    },
+    {
+      "name": "Promise handling",
+      "description": "Correctly uses then() or async/await to handle the promise returned by superagent",
+      "max_score": 25
+    },
+    {
+      "name": "Response body access",
+      "description": "Accesses the response body using the .body property or equivalent",
+      "max_score": 20
+    }
+  ]
+}

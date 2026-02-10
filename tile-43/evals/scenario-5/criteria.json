@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's attach() method for file uploads with automatic multipart/form-data encoding.",
+  "type": "weighted_checklist",
+  "capability_tested": "File Upload - Single File",
+  "checklist": [
+    {
+      "name": "Use attach() method",
+      "description": "Uses superagent's attach() method to add the file to the request",
+      "max_score": 50
+    },
+    {
+      "name": "Field name",
+      "description": "Correctly specifies 'avatar' as the first argument (field name) to attach()",
+      "max_score": 20
+    },
+    {
+      "name": "File path",
+      "description": "Passes the filePath as the second argument to attach()",
+      "max_score": 15
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the response body containing the updated user object",
+      "max_score": 15
+    }
+  ]
+}
