@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the ability to track upload and download progress through event listeners, accessing progress metadata like bytes loaded, total bytes, and percentage.",
+  "type": "weighted_checklist",
+  "capability_tested": "Progress Event Tracking",
+  "checklist": [
+    {
+      "name": "Progress event listener",
+      "description": "Correctly registers a progress event listener using the on method",
+      "max_score": 40
+    },
+    {
+      "name": "Progress data access",
+      "description": "Properly accesses and uses progress event data including loaded, total, percent, and direction properties",
+      "max_score": 35
+    },
+    {
+      "name": "Bidirectional tracking",
+      "description": "Demonstrates understanding that progress can be tracked for both uploads and downloads",
+      "max_score": 25
+    }
+  ]
+}

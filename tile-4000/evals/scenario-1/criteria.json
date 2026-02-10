@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the ability to build and append query string parameters to HTTP requests, including handling of objects, arrays, and different data types.",
+  "type": "weighted_checklist",
+  "capability_tested": "Query String Handling",
+  "checklist": [
+    {
+      "name": "Basic query parameters",
+      "description": "Correctly adds simple key-value pairs as query parameters using the query method",
+      "max_score": 30
+    },
+    {
+      "name": "Complex data types",
+      "description": "Properly handles arrays and boolean values in query parameters",
+      "max_score": 40
+    },
+    {
+      "name": "Chainable queries",
+      "description": "Demonstrates the ability to chain multiple query parameter additions that merge together",
+      "max_score": 30
+    }
+  ]
+}

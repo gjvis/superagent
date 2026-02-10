@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct implementation of authentication mechanisms including HTTP Basic Authentication and Bearer token authentication.",
+  "type": "weighted_checklist",
+  "capability_tested": "Basic Authentication",
+  "checklist": [
+    {
+      "name": "Basic authentication",
+      "description": "Correctly implements HTTP Basic Authentication by passing username and password to the authentication method",
+      "max_score": 45
+    },
+    {
+      "name": "Bearer token",
+      "description": "Correctly implements Bearer token authentication by configuring the authentication with token and appropriate type",
+      "max_score": 45
+    },
+    {
+      "name": "Error handling",
+      "description": "Properly handles authentication failures and unauthorized responses",
+      "max_score": 10
+    }
+  ]
+}

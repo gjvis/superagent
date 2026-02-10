@@ -1,0 +1,27 @@
+{
+  "context": "This criteria evaluates the correct use of HTTP method functions (GET, POST, PUT, DELETE) with the HTTP client library to perform basic CRUD operations.",
+  "type": "weighted_checklist",
+  "capability_tested": "Basic HTTP Requests",
+  "checklist": [
+    {
+      "name": "GET request",
+      "description": "Uses the appropriate method to perform a GET request to retrieve data from the API endpoint",
+      "max_score": 25
+    },
+    {
+      "name": "POST request",
+      "description": "Uses the appropriate method to send data in a POST request to create a new resource",
+      "max_score": 25
+    },
+    {
+      "name": "PUT request",
+      "description": "Uses the appropriate method to send data in a PUT request to update an existing resource",
+      "max_score": 25
+    },
+    {
+      "name": "DELETE request",
+      "description": "Uses the appropriate method to perform a DELETE request to remove a resource",
+      "max_score": 25
+    }
+  ]
+}

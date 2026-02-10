@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the ability to upload files using multipart/form-data encoding, including adding file attachments and form fields.",
+  "type": "weighted_checklist",
+  "capability_tested": "File Upload with Multipart",
+  "checklist": [
+    {
+      "name": "File attachment",
+      "description": "Correctly attaches files to the request using the attach method with proper field names",
+      "max_score": 40
+    },
+    {
+      "name": "Form fields",
+      "description": "Properly adds metadata as form fields using the field method alongside file attachments",
+      "max_score": 35
+    },
+    {
+      "name": "Multiple files",
+      "description": "Demonstrates ability to handle multiple file uploads in a single request",
+      "max_score": 25
+    }
+  ]
+}

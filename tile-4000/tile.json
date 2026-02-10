@@ -1,0 +1,8 @@
+{
+  "name": "garethvisagie/superagent",
+  "version": "4.0.0",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/superagent@4.0.0",
+  "summary": "Progressive HTTP client library providing a fluent API for making HTTP requests in both browser and Node.js environments with support for promises, streams, file uploads, and automatic response parsing.",
+  "private": true
+}

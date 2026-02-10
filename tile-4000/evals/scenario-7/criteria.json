@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the implementation of automatic retry logic for failed requests, including basic retry count configuration and custom retry condition callbacks.",
+  "type": "weighted_checklist",
+  "capability_tested": "Automatic Retry Logic",
+  "checklist": [
+    {
+      "name": "Basic retry configuration",
+      "description": "Correctly configures automatic retries using the retry method with a retry count",
+      "max_score": 40
+    },
+    {
+      "name": "Custom retry callback",
+      "description": "Implements custom retry logic using a callback function that receives error and response to determine whether to retry",
+      "max_score": 40
+    },
+    {
+      "name": "Retry tracking",
+      "description": "Demonstrates awareness of retry behavior and tracks retry attempts",
+      "max_score": 20
+    }
+  ]
+}
