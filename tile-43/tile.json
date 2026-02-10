@@ -1,0 +1,8 @@
+{
+  "name": "garethvisagie/superagent",
+  "version": "4.0.0",
+  "docs": "docs/index.md",
+  "describes": "pkg:npm/superagent@4.0.0",
+  "summary": "SuperAgent is a progressive HTTP client library that provides a fluent, chainable API for making HTTP requests in both browser and Node.js environments.",
+  "private": true
+}

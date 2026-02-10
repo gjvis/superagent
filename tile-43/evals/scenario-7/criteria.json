@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's agent() to create a persistent client with automatic cookie management across multiple requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Agent with Cookie Persistence",
+  "checklist": [
+    {
+      "name": "Create agent",
+      "description": "Uses superagent's agent() method to create a persistent client instance",
+      "max_score": 35
+    },
+    {
+      "name": "Use agent for login",
+      "description": "Makes the POST login request using the agent instance (agent.post())",
+      "max_score": 25
+    },
+    {
+      "name": "Use agent for profile",
+      "description": "Makes the GET profile request using the same agent instance (agent.get())",
+      "max_score": 25
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the profile data from the second request",
+      "max_score": 15
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent with modern async/await syntax, leveraging its native Promise support for cleaner asynchronous code.",
+  "type": "weighted_checklist",
+  "capability_tested": "Promise and Async/Await Support",
+  "checklist": [
+    {
+      "name": "Async function",
+      "description": "Declares the function using async keyword",
+      "max_score": 15
+    },
+    {
+      "name": "Await syntax",
+      "description": "Uses await keyword with superagent requests instead of then() callbacks",
+      "max_score": 40
+    },
+    {
+      "name": "Sequential requests",
+      "description": "Makes the second request only after the first completes, using the result from the first",
+      "max_score": 25
+    },
+    {
+      "name": "Response body access",
+      "description": "Accesses .body property from awaited responses to get parsed data",
+      "max_score": 20
+    }
+  ]
+}

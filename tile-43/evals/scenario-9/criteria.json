@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to create and use superagent plugins to extend request functionality in a reusable way.",
+  "type": "weighted_checklist",
+  "capability_tested": "Plugin System",
+  "checklist": [
+    {
+      "name": "Plugin function signature",
+      "description": "Creates loggingPlugin as a function that accepts a request parameter and returns the modified request",
+      "max_score": 20
+    },
+    {
+      "name": "Modify request in plugin",
+      "description": "Uses request.set() within the plugin to add the custom headers",
+      "max_score": 30
+    },
+    {
+      "name": "Return request",
+      "description": "Returns the request object from the plugin to enable chaining",
+      "max_score": 15
+    },
+    {
+      "name": "Use plugin",
+      "description": "Uses the use() method in fetchWithLogging to apply the plugin to the request",
+      "max_score": 35
+    }
+  ]
+}

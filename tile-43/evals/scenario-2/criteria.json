@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's query() method to append query string parameters to URLs using object notation.",
+  "type": "weighted_checklist",
+  "capability_tested": "Query String Parameters",
+  "checklist": [
+    {
+      "name": "Use query() method",
+      "description": "Uses superagent's query() method to add query parameters",
+      "max_score": 40
+    },
+    {
+      "name": "Object format",
+      "description": "Passes the filters object directly to query() rather than manually constructing query strings",
+      "max_score": 30
+    },
+    {
+      "name": "Proper chaining",
+      "description": "Correctly chains query() with get() method and promise handling",
+      "max_score": 20
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the parsed response body containing the product array",
+      "max_score": 10
+    }
+  ]
+}

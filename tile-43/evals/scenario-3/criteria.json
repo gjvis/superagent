@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's auth() method to add HTTP Basic authentication credentials to requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Basic Authentication",
+  "checklist": [
+    {
+      "name": "Use auth() method",
+      "description": "Uses superagent's auth() method to set authentication credentials",
+      "max_score": 50
+    },
+    {
+      "name": "Pass credentials",
+      "description": "Correctly passes username and password as separate arguments to auth()",
+      "max_score": 30
+    },
+    {
+      "name": "Method chaining",
+      "description": "Properly chains auth() with get() and promise handling methods",
+      "max_score": 10
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the parsed response body with protected data",
+      "max_score": 10
+    }
+  ]
+}

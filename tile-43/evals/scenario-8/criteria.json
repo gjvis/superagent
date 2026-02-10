@@ -1,0 +1,27 @@
+{
+  "context": "This evaluates the ability to use superagent's progress event to monitor download progress for large file transfers.",
+  "type": "weighted_checklist",
+  "capability_tested": "Progress Events",
+  "checklist": [
+    {
+      "name": "Use on() for events",
+      "description": "Uses the on() method to listen for the 'progress' event",
+      "max_score": 40
+    },
+    {
+      "name": "Event name",
+      "description": "Correctly specifies 'progress' as the event name",
+      "max_score": 20
+    },
+    {
+      "name": "Callback invocation",
+      "description": "Calls the progressCallback with the event data from the progress event",
+      "max_score": 25
+    },
+    {
+      "name": "Response handling",
+      "description": "Returns the response body after download completes",
+      "max_score": 15
+    }
+  ]
+}
