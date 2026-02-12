@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct configuration of TLS/SSL certificates for secure and authenticated connections.",
+  "type": "weighted_checklist",
+  "capability_tested": "TLS/SSL Certificate Configuration",
+  "checklist": [
+    {
+      "name": "CA certificate",
+      "description": "Uses the .ca() method to set a custom Certificate Authority certificate for server validation",
+      "max_score": 30
+    },
+    {
+      "name": "Client certificate",
+      "description": "Uses the .cert() method to set the client certificate for mutual TLS authentication",
+      "max_score": 35
+    },
+    {
+      "name": "Private key",
+      "description": "Uses the .key() method to set the client private key that pairs with the certificate",
+      "max_score": 35
+    }
+  ]
+}

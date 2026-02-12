@@ -1,0 +1,27 @@
+{
+  "context": "This criteria evaluates the correct usage of HTTP request methods and the fluent API for building and executing requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Basic HTTP Methods",
+  "checklist": [
+    {
+      "name": "HTTP method functions",
+      "description": "Uses the appropriate method-specific functions (get, post, put, delete, patch) to create requests",
+      "max_score": 30
+    },
+    {
+      "name": "Request execution",
+      "description": "Properly executes requests using the callback-based .end() method or promise-based .then()/.catch() methods",
+      "max_score": 25
+    },
+    {
+      "name": "Response handling",
+      "description": "Correctly accesses response properties (status, statusCode, body) to extract and display results",
+      "max_score": 25
+    },
+    {
+      "name": "Body data transmission",
+      "description": "Correctly sends JSON data in POST/PUT/PATCH requests using the appropriate method",
+      "max_score": 20
+    }
+  ]
+}

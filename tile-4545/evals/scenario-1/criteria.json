@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the proper use of query string building methods to construct parameterized API requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Query String Building",
+  "checklist": [
+    {
+      "name": "Query method usage",
+      "description": "Uses the .query() method to add query parameters to requests",
+      "max_score": 40
+    },
+    {
+      "name": "Object-based parameters",
+      "description": "Passes query parameters as objects (key-value pairs) rather than manually constructing strings",
+      "max_score": 30
+    },
+    {
+      "name": "Parameter accumulation",
+      "description": "Correctly chains multiple .query() calls to accumulate parameters incrementally",
+      "max_score": 30
+    }
+  ]
+}

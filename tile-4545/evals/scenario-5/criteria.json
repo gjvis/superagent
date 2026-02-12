@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct implementation and usage of plugins to extend request functionality.",
+  "type": "weighted_checklist",
+  "capability_tested": "Plugin System",
+  "checklist": [
+    {
+      "name": "Plugin function creation",
+      "description": "Creates plugin functions with the correct signature that accept the request object as a parameter",
+      "max_score": 30
+    },
+    {
+      "name": "Plugin application",
+      "description": "Uses the .use() method to apply plugins to requests",
+      "max_score": 35
+    },
+    {
+      "name": "Plugin chaining",
+      "description": "Demonstrates that multiple plugins can be chained together by calling .use() multiple times",
+      "max_score": 35
+    }
+  ]
+}
