@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the proper configuration of automatic retry behavior for handling transient failures.",
+  "type": "weighted_checklist",
+  "capability_tested": "Automatic Retry Logic",
+  "checklist": [
+    {
+      "name": "Retry configuration",
+      "description": "Uses the .retry() method to configure automatic retry behavior with a specified count",
+      "max_score": 35
+    },
+    {
+      "name": "Default retry behavior",
+      "description": "Demonstrates understanding that retries automatically trigger on 5xx errors and network failures",
+      "max_score": 30
+    },
+    {
+      "name": "Custom retry logic",
+      "description": "Implements custom retry callback function to control retry behavior based on error or response properties",
+      "max_score": 35
+    }
+  ]
+}

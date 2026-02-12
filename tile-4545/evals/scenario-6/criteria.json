@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates proper error handling and custom response validation in HTTP requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Error Handling and Validation",
+  "checklist": [
+    {
+      "name": "Error catching",
+      "description": "Properly catches and handles errors using callback error parameter or promise .catch()",
+      "max_score": 30
+    },
+    {
+      "name": "Error property access",
+      "description": "Accesses error object properties such as .status, .response, or .message to extract error details",
+      "max_score": 35
+    },
+    {
+      "name": "Custom validation",
+      "description": "Uses the .ok() method to implement custom response validation logic that overrides default success criteria",
+      "max_score": 35
+    }
+  ]
+}

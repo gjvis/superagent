@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct usage of response streaming to handle large files without buffering.",
+  "type": "weighted_checklist",
+  "capability_tested": "Response Streaming (Node.js)",
+  "checklist": [
+    {
+      "name": "Stream piping",
+      "description": "Uses the .pipe() method to pipe the response to a writable stream (e.g., fs.createWriteStream)",
+      "max_score": 40
+    },
+    {
+      "name": "Buffer disabling",
+      "description": "Disables response buffering using .buffer(false) to enable true streaming",
+      "max_score": 30
+    },
+    {
+      "name": "Stream events",
+      "description": "Handles stream events such as 'end', 'data', or 'error' to manage the streaming process",
+      "max_score": 30
+    }
+  ]
+}

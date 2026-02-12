@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct usage of agents to maintain persistent cookie jars across multiple requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Cookie Persistence with Agents",
+  "checklist": [
+    {
+      "name": "Agent creation",
+      "description": "Creates an agent instance using the agent() factory function to enable cookie persistence",
+      "max_score": 30
+    },
+    {
+      "name": "Request through agent",
+      "description": "Makes requests through the agent instance rather than directly on the main module",
+      "max_score": 35
+    },
+    {
+      "name": "Cookie persistence",
+      "description": "Demonstrates that cookies are automatically saved from responses and sent with subsequent requests through the same agent",
+      "max_score": 35
+    }
+  ]
+}

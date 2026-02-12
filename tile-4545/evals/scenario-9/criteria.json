@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct usage of agent-level configuration to set defaults that apply across multiple requests.",
+  "type": "weighted_checklist",
+  "capability_tested": "Agent-level Request Defaults",
+  "checklist": [
+    {
+      "name": "Agent configuration",
+      "description": "Creates an agent and configures default settings using methods like .set(), .auth(), or .timeout() on the agent",
+      "max_score": 40
+    },
+    {
+      "name": "Default inheritance",
+      "description": "Demonstrates that requests made through the agent automatically inherit the configured defaults",
+      "max_score": 35
+    },
+    {
+      "name": "Multiple defaults",
+      "description": "Configures multiple types of defaults (e.g., headers, auth, timeout) on the same agent",
+      "max_score": 25
+    }
+  ]
+}

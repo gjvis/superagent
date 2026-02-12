@@ -1,0 +1,22 @@
+{
+  "context": "This criteria evaluates the correct usage of file attachment and form field methods for multipart uploads.",
+  "type": "weighted_checklist",
+  "capability_tested": "Multipart Form Data Upload",
+  "checklist": [
+    {
+      "name": "File attachment",
+      "description": "Uses the .attach() method to add files to the request with proper field names",
+      "max_score": 40
+    },
+    {
+      "name": "Form fields",
+      "description": "Uses the .field() method to add text form data alongside file attachments",
+      "max_score": 35
+    },
+    {
+      "name": "Multiple attachments",
+      "description": "Correctly handles multiple file attachments in a single request",
+      "max_score": 25
+    }
+  ]
+}
